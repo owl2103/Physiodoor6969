@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioDoor - Expert Physiotherapy at Your Doorstep</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat with us</span>
+    </div>
+
+    <!-- Emergency Contact Float -->
+    <div class="emergency-float" onclick="callEmergency()">
+        <i class="fas fa-phone-alt"></i>
+        <span class="emergency-text">Emergency</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="PhysioDoor Logo" class="logo-img">
+                    <span class="logo-text">PhysioDoor</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Features</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="showSection('booking')">
+                    <i class="fas fa-calendar-plus"></i> Book Now
+                </button>
+                <button class="btn btn-secondary" onclick="showSection('contact')">
+                    <i class="fas fa-phone"></i> Contact Us
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>#1 Home Physiotherapy in Pune</span>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <!-- Main Content -->
+                <div class="hero-main">
+                    <div class="hero-left">
+                        <h1 class="hero-title">Professional Physiotherapy at Home</h1>
+                        
+                        <p class="hero-description">
+                            Experience expert care and personalized treatment without leaving the comfort of your home.
+                        </p>
+
+                        <!-- Action Buttons -->
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-large" onclick="showSection('booking')">
+                                <i class="fas fa-calendar-plus"></i>
+                                Book Appointment
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="btn btn-outline btn-large" onclick="showSection('contact')">
+                                <i class="fas fa-phone"></i>
+                                Contact Us
+                                <i class="fas fa-sparkles"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hero-right">
+                        <!-- Certified Expert Badge -->
+                        <div class="expert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certified Expert</span>
+                        </div>
+
+                        <!-- Logo Circle -->
+                        <div class="logo-circle">
+                            <div class="circle-glow"></div>
+                            <div class="logo-container-large">
+                                <img src="assets/logo.png" alt="PhysioDoor" class="hero-logo">
+                                <span class="logo-text-large">PhysioDoor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Cards - Updated to match provided image -->
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Convenient Home Visits</h3>
+                        <p>Professional physiotherapy services delivered to your doorstep across Pune and surrounding areas.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Book appointments at your convenience with same-day availability and flexible timing options.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Certified Professionals</h3>
+                        <p>All our physiotherapists are certified with specialized training and years of experience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Quality Assurance</h3>
+                        <p>Strict quality standards, verified reviews, and continuous monitoring ensure excellent care.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Personalized Care</h3>
+                        <p>Customized treatment plans designed specifically for your condition, age, and recovery goals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock customer support and emergency consultation services for urgent needs.</p>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="stats-section">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-plus">+</span>
+                        </div>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-plus">+</span>
+                        </div>
+                        <span class="stat-label">Happy Patients</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="5">0</span>
+                        </div>
+                        <span class="stat-label">Star Expert</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="98">0</span>
+                            <span class="stat-plus">%</span>
+                        </div>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose PhysioDoor?</h2>
+            <p class="section-description">Experience the difference of professional home-based physiotherapy care</p>
+            <div class="about-content">
+                <div class="doctor-profile">
+                    <div class="doctor-info">
+                        <div class="doctor-logo">
+                            <img src="assets/doctor-dipan.jpg" alt="Dr. Dipan Chowdhury" class="doctor-photo">
+                        </div>
+                        <h3>Dr. Dipan Chowdhury (PT)</h3>
+                        <p class="doctor-title">Founder & Chief Physiotherapist</p>
+                        <div class="doctor-credentials">
+                            <span class="credential">5+ Years Experience</span>
+                            <span class="credential">500+ Patients Treated</span>
+                            <span class="credential">Certified Professional</span>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>dipanchowdhury50@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>9547784509</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pune, Maharashtra</span>
+                            </div>
+                        </div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary" onclick="showSection('booking')">Book Consultation</button>
+                            <button class="btn btn-outline" onclick="openWhatsApp()">WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-values">
+                    <div class="mission-statement">
+                        <h3>Our Mission</h3>
+                        <p>"With over 5 years of dedicated experience, Dr. Dipan brings personalized, empathetic care to your home. As our founder and chief physiotherapist, his belief: movement is the path to healing, and healing happens best in the comfort of your own space."</p>
+                        <div class="mission-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-heart"></i>
+                                <span>Compassionate Care</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-home"></i>
+                                <span>Home Comfort</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-award"></i>
+                                <span>Expert Treatment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-choose-us">
+                        <h3>Why Choose Us?</h3>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Expert Physiotherapist</h4>
+                                    <p>Certified professional with 5+ years experience in various physiotherapy specializations</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Home-Based Care</h4>
+                                    <p>Professional treatment in the comfort and safety of your own home environment</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Flexible Scheduling</h4>
+                                    <p>Appointments that fit your busy lifestyle with same-day and emergency services available</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Insurance Accepted</h4>
+                                    <p>We work with major insurance providers to make quality care accessible and affordable</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Complete Range of Services</h2>
+            <p class="section-description">Comprehensive physiotherapy solutions for all your health needs</p>
+            <div class="services-filter">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="pain">Pain Management</button>
+                <button class="filter-btn" data-filter="rehab">Rehabilitation</button>
+                <button class="filter-btn" data-filter="specialty">Specialty Care</button>
+            </div>
+            <div class="services-full-grid">
+                <div class="service-full-card" data-category="pain">
+                    <div class="service-icon">
+                        <i class="fas fa-user-injured"></i>
+                    </div>
+                    <h3>Back Pain Therapy</h3>
+                    <p>Specialized treatment for chronic back pain, herniated discs, and spinal alignment issues using advanced techniques and personalized exercise programs.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45-60 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('back-pain')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="specialty">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurological Rehab</h3>
+                    <p>Expert care for stroke recovery, Parkinson's disease, SCI (cervical, thoracic, lumbar level), and other neurological conditions with proven rehabilitation techniques.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60-90 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('neurological')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="rehab">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Orthopedic Care</h3>
+                    <p>Comprehensive treatment for neck pain, back pain, shoulder pain, knee pain, arthritis, fracture recovery, and mobility enhancement programs.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45-60 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹1000-1200</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('orthopedic')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="specialty">
+                    <div class="service-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Sports Rehabilitation</h3>
+                    <p>Professional treatment for ankle sprain, ACL injury, tennis elbow, and other sports injuries. Performance enhancement programs for athletes and active individuals.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60-75 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('sports')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="rehab">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3>Post-Surgery Rehab</h3>
+                    <p>Specialized rehabilitation after orthopedic surgeries, joint replacements, and other surgical procedures to ensure optimal recovery and mobility restoration.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60-90 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹1000-1200</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('post-surgery')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="specialty">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Pediatric Physio</h3>
+                    <p>Gentle, specialized care for children's developmental delays, cerebral palsy, and mobility challenges.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>30-45 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('pediatric')">Book Now</button>
+                </div>
+
+                <div class="service-full-card" data-category="specialty">
+                    <div class="service-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Respiratory Therapy</h3>
+                    <p>Breathing exercises and chest physiotherapy for COPD, asthma, and post-COVID respiratory recovery.</p>
+                    <div class="service-details">
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45-60 mins</span>
+                        </div>
+                        <div class="service-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹800-1000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="bookService('respiratory')">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Service Areas Map -->
+            <div class="service-areas-map">
+                <div class="map-header">
+                    <h3>Service Areas in Pune</h3>
+                    <p>We provide home physiotherapy services across all major areas in Pune</p>
+                </div>
+                <div class="map-container">
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Koregaon Park</h4>
+                        <p>Premium residential area</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Viman Nagar</h4>
+                        <p>IT hub and residential zone</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Kharadi</h4>
+                        <p>Emerging IT corridor</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Hadapsar</h4>
+                        <p>Industrial and residential</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Baner</h4>
+                        <p>Tech and residential hub</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Wakad</h4>
+                        <p>Growing suburban area</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Hinjewadi</h4>
+                        <p>Major IT park location</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Aundh</h4>
+                        <p>Upscale residential area</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Shivaji Nagar</h4>
+                        <p>Central Pune location</p>
+                    </div>
+                    <div class="area-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Camp Area</h4>
+                        <p>Historic city center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages Section -->
+    <section id="packages" class="section">
+        <div class="container">
+            <h2 class="section-title">Treatment Packages</h2>
+            <p class="section-description">Choose the perfect package for your recovery journey</p>
+            <div class="pricing-packages">
+                <div class="package-card">
+                    <h3 class="package-title">Weekly Package</h3>
+                    <div class="package-price">₹4,499</div>
+                    <div class="package-sessions">6 Sessions</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 6 Home physiotherapy sessions</li>
+                        <li><i class="fas fa-check"></i> Personalized treatment plan</li>
+                        <li><i class="fas fa-check"></i> Progress monitoring</li>
+                        <li><i class="fas fa-check"></i> Exercise guidance</li>
+                        <li><i class="fas fa-check"></i> WhatsApp support</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="bookPackage('weekly')">
+                        <i class="fas fa-calendar-plus"></i> Book Weekly Package
+                    </button>
+                </div>
+                
+                <div class="package-card">
+                    <h3 class="package-title">Monthly Package</h3>
+                    <div class="package-price">₹19,999</div>
+                    <div class="package-sessions">26 Sessions</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 26 Home physiotherapy sessions</li>
+                        <li><i class="fas fa-check"></i> Comprehensive treatment plan</li>
+                        <li><i class="fas fa-check"></i> Weekly progress reviews</li>
+                        <li><i class="fas fa-check"></i> Custom exercise programs</li>
+                        <li><i class="fas fa-check"></i> 24/7 WhatsApp support</li>
+                        <li><i class="fas fa-check"></i> Free consultation calls</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="bookPackage('monthly')">
+                        <i class="fas fa-calendar-plus"></i> Book Monthly Package
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title">Patient Success Stories</h2>
+            <p class="section-description">Real experiences from patients who found healing at home</p>
+            <div class="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="patient-info">
+                                <div class="patient-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="patient-details">
+                                    <h4>Rajesh Kumar</h4>
+                                    <span>Age 45 • Back Pain Recovery</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treatment-duration">
+                                <span>3 months treatment</span>
+                            </div>
+                        </div>
+                        <blockquote>
+                            "I was suffering from chronic back pain for 2 years. Dr. Dipan's home visits and personalized treatment plan completely transformed my life. Now I'm pain-free and back to my active lifestyle!"
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <div class="recovery-stats">
+                                <div class="stat">
+                                    <span class="stat-value">95%</span>
+                                    <span class="stat-label">Pain Reduction</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">12</span>
+                                    <span class="stat-label">Sessions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="patient-info">
+                                <div class="patient-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="patient-details">
+                                    <h4>Anita Desai</h4>
+                                    <span>Age 62 • Post-Surgery Rehab</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treatment-duration">
+                                <span>4 months treatment</span>
+                            </div>
+                        </div>
+                        <blockquote>
+                            "After my knee replacement surgery, I was worried about recovery. Dr. Dipan's expert care and home-based therapy made the process so much easier. I'm walking confidently again!"
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <div class="recovery-stats">
+                                <div class="stat">
+                                    <span class="stat-value">100%</span>
+                                    <span class="stat-label">Mobility Restored</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">16</span>
+                                    <span class="stat-label">Sessions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="patient-info">
+                                <div class="patient-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="patient-details">
+                                    <h4>Mohan Patil</h4>
+                                    <span>Age 78 • Geriatric Care</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treatment-duration">
+                                <span>6 months treatment</span>
+                            </div>
+                        </div>
+                        <blockquote>
+                            "The convenience of home visits combined with professional care is perfect for elderly patients like me. Dr. Dipan's gentle approach and expertise have improved my balance and strength significantly."
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <div class="recovery-stats">
+                                <div class="stat">
+                                    <span class="stat-value">80%</span>
+                                    <span class="stat-label">Balance Improved</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">24</span>
+                                    <span class="stat-label">Sessions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="changeTestimonial(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="changeTestimonial(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="doctor-name-highlight">Dr. Dipan Chowdhury</div>
+            <p class="section-description">Your trusted physiotherapy expert in Pune</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="appointment">Book Appointment</option>
+                                    <option value="inquiry">General Inquiry</option>
+                                    <option value="emergency">Emergency</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-section">
+                    <div class="contact-info">
+                        <img src="assets/doctor-dipan.jpg" alt="Dr. Dipan Chowdhury" class="doctor-contact-photo">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>dipanchowdhury50@gmail.com</p>
+                                <button class="btn btn-sm" onclick="window.location.href='mailto:dipanchowdhury50@gmail.com'">Send Email</button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>9547784509</p>
+                                <button class="btn btn-sm" onclick="window.location.href='tel:9547784509'">Call Now</button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Service Area</strong>
+                                <p>All areas in Pune, Maharashtra</p>
+                                <button class="btn btn-sm" onclick="showServiceAreas()">View Areas</button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Working Hours</strong>
+                                <p>Mon-Sat: 8:00 AM - 8:00 PM<br>Sun: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <button class="action-btn whatsapp" onclick="openWhatsApp()">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp Chat</span>
+                            </button>
+                            <button class="action-btn emergency" onclick="callEmergency()">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Emergency Call</span>
+                            </button>
+                            <button class="action-btn booking" onclick="showSection('booking')">
+                                <i class="fas fa-calendar-plus"></i>
+                                <span>Book Appointment</span>
+                            </button>
+                            <button class="action-btn assessment" onclick="startAssessment()">
+                                <i class="fas fa-clipboard-check"></i>
+                                <span>Health Assessment</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section">
+        <div class="container">
+            <h2 class="section-title">Book Your Home Session</h2>
+            <p class="section-description">Schedule your personalized physiotherapy session at home</p>
+            <div class="booking-container">
+                <div class="booking-form-container">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="booking-steps">
+                            <div class="step active" data-step="1">
+                                <span class="step-number">1</span>
+                                <span class="step-title">Personal Info</span>
+                            </div>
+                            <div class="step" data-step="2">
+                                <span class="step-number">2</span>
+                                <span class="step-title">Service & Schedule</span>
+                            </div>
+                            <div class="step" data-step="3">
+                                <span class="step-number">3</span>
+                                <span class="step-title">Confirmation</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 1: Personal Information -->
+                        <div class="form-step active" data-step="1">
+                            <h3>Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" name="fullName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age">Age *</label>
+                                    <input type="number" id="age" name="age" min="1" max="120" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="emailAddress">Email Address *</label>
+                                    <input type="email" id="emailAddress" name="emailAddress" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile">Mobile Number *</label>
+                                    <input type="tel" id="mobile" name="mobile" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Complete Address *</label>
+                                <textarea id="address" name="address" rows="3" placeholder="House/Flat No, Street, Area, Landmark, Pincode" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="emergencyContact">Emergency Contact</label>
+                                <input type="tel" id="emergencyContact" name="emergencyContact" placeholder="Emergency contact number">
+                            </div>
+                            <button type="button" class="btn btn-primary next-step" onclick="nextStep()">
+                                Next <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Step 2: Service & Schedule -->
+                        <div class="form-step" data-step="2">
+                            <h3>Service & Schedule</h3>
+                            <div class="form-group">
+                                <label for="service">Preferred Service *</label>
+                                <select id="service" name="service" required onchange="updateServicePrice()">
+                                    <option value="">Select a service</option>
+                                    <option value="pain-management" data-price="800-1000">Pain Management (₹800-1000)</option>
+                                    <option value="post-surgery" data-price="1000-1200">Post-Surgery Rehab (₹1000-1200)</option>
+                                    <option value="geriatric" data-price="800-1000">Geriatric Physio (₹800-1000)</option>
+                                    <option value="sports-injury" data-price="800-1000">Sports Injury Recovery (₹800-1000)</option>
+                                    <option value="back-pain" data-price="800-1000">Back Pain Therapy (₹800-1000)</option>
+                                    <option value="neurological" data-price="800-1000">Neurological Rehab (₹800-1000)</option>
+                                    <option value="orthopedic" data-price="1000-1200">Orthopedic Care (₹1000-1200)</option>
+                                    <option value="pediatric" data-price="800-1000">Pediatric Physio (₹800-1000)</option>
+                                    <option value="respiratory" data-price="800-1000">Respiratory Therapy (₹800-1000)</option>
+                                    <option value="weekly-package" data-price="4499">Weekly Package - 6 Sessions (₹4499)</option>
+                                    <option value="monthly-package" data-price="19999">Monthly Package - 26 Sessions (₹19999)</option>
+                                </select>
+                                <div id="servicePrice" class="service-price-display"></div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="sessionType">Session Type *</label>
+                                    <select id="sessionType" name="sessionType" required>
+                                        <option value="">Select session type</option>
+                                        <option value="single">Single Session</option>
+                                        <option value="package">Package (Recommended)</option>
+                                        <option value="assessment">Initial Assessment</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="urgency">Urgency Level</label>
+                                    <select id="urgency" name="urgency">
+                                        <option value="normal">Normal</option>
+                                        <option value="urgent">Urgent (within 24 hours)</option>
+                                        <option value="emergency">Emergency (ASAP)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Calendar Integration -->
+                            <div class="calendar-section">
+                                <label>Select Preferred Date & Time *</label>
+                                <div class="calendar-container">
+                                    <input type="text" id="datetime" name="datetime" placeholder="Click to select date and time" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="condition">Describe Your Condition *</label>
+                                <textarea id="condition" name="condition" rows="4" placeholder="Please describe your symptoms, pain level, and any relevant medical history..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="previousTreatment">Previous Treatment</label>
+                                <textarea id="previousTreatment" name="previousTreatment" rows="2" placeholder="Any previous physiotherapy or medical treatment for this condition?"></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline prev-step" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Previous
+                                </button>
+                                <button type="button" class="btn btn-primary next-step" onclick="nextStep()">
+                                    Next <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Confirmation -->
+                        <div class="form-step" data-step="3">
+                            <h3>Booking Confirmation</h3>
+                            <div class="booking-summary">
+                                <h4>Booking Summary</h4>
+                                <div id="bookingSummary">
+                                    <!-- Summary will be populated by JavaScript -->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="specialRequests">Special Requests</label>
+                                <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special requirements, equipment needs, or accessibility considerations?"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <label for="terms">I agree to the <a href="#" onclick="showTerms()">Terms & Conditions</a> and <a href="#" onclick="showPrivacy()">Privacy Policy</a></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="whatsappUpdates" name="whatsappUpdates">
+                                    <label for="whatsappUpdates">Receive appointment updates via WhatsApp</label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline prev-step" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Previous
+                                </button>
+                                <button type="submit" class="btn btn-primary booking-submit">
+                                    <i class="fas fa-calendar-check"></i> Confirm Booking
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="booking-info">
+                    <div class="booking-help">
+                        <h3>Need Help?</h3>
+                        <div class="help-options">
+                            <button class="help-btn" onclick="openWhatsApp()">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>Chat on WhatsApp</span>
+                            </button>
+                            <button class="help-btn" onclick="callEmergency()">
+                                <i class="fas fa-phone"></i>
+                                <span>Call: 9547784509</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="booking-features">
+                        <h3>What to Expect</h3>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-user-md"></i>
+                                <span>Certified physiotherapist</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-home"></i>
+                                <span>Treatment at your home</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tools"></i>
+                                <span>Professional equipment</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Flexible scheduling</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Insurance accepted</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emergency-booking">
+                        <h3>Emergency Booking</h3>
+                        <p>Need immediate physiotherapy care?</p>
+                        <button class="btn btn-danger" onclick="emergencyBooking()">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Emergency Booking
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">Find answers to common questions about our services</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What conditions do you treat?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We treat a wide range of conditions including back pain, neck pain, shoulder pain, knee pain, post-surgery rehabilitation, sports injuries, neurological conditions, geriatric care, and respiratory issues. Our certified physiotherapist provides personalized treatment plans for each condition.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do home visits work?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our physiotherapist comes to your home with all necessary equipment. We conduct a thorough assessment, create a personalized treatment plan, and provide hands-on therapy in the comfort of your own space. Sessions typically last 45-90 minutes depending on your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What are your charges?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our charges vary based on the type of treatment and session duration. Single sessions range from ₹800-1200. We also offer cost-effective packages: Weekly Package (6 sessions) for ₹4,499 and Monthly Package (26 sessions) for ₹19,999. Insurance coverage is available for eligible treatments.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you accept insurance?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we work with most major insurance providers. We can help you understand your coverage and submit claims for eligible treatments. Please contact us with your insurance details for verification.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How soon can I get an appointment?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Regular appointments can usually be scheduled within 24-48 hours. For urgent cases, we offer same-day appointments when available. Emergency consultations can be arranged within a few hours of your call.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What should I prepare for the session?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Please wear comfortable, loose-fitting clothes that allow easy movement. Have a clean, quiet space ready for the session. Keep any medical reports, X-rays, or previous treatment records handy. We'll bring all necessary equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-container">
+                            <img src="assets/logo.png" alt="PhysioDoor Logo" class="footer-logo-img">
+                            <div class="logo-text">
+                                <h3>PhysioDoor</h3>
+                                <span>Expert Care at Home</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Professional physiotherapy care delivered to your doorstep. Feel better. Move better. Live better.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Dr. Dipan</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#testimonials">Patient Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#" onclick="bookService('pain-management')">Pain Management</a></li>
+                        <li><a href="#" onclick="bookService('post-surgery')">Post-Surgery Rehab</a></li>
+                        <li><a href="#" onclick="bookService('geriatric')">Geriatric Care</a></li>
+                        <li><a href="#" onclick="bookService('sports')">Sports Injury</a></li>
+                        <li><a href="#" onclick="bookService('neurological')">Neurological Rehab</a></li>
+                        <li><a href="#" onclick="bookService('orthopedic')">Orthopedic Care</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> dipanchowdhury50@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 9547784509</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sat: 8AM-8PM</p>
+                    </div>
+                    <div class="footer-emergency">
+                        <button class="btn btn-danger btn-sm" onclick="callEmergency()">
+                            <i class="fas fa-phone-alt"></i> Emergency: 9547784509
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PhysioDoor. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#" onclick="showPrivacy()">Privacy Policy</a>
+                        <a href="#" onclick="showTerms()">Terms of Service</a>
+                        <a href="#" onclick="showRefund()">Refund Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
